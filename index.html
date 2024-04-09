@@ -19,6 +19,7 @@
         <p>Jelentkezési határidő: 2024. május 01.</p>
       </nav>
     </header>
+
     <main>
 
       <!--BEVEZETŐ-->
@@ -26,8 +27,7 @@
       <section class="introduction-container">
         <div class="video-container">
           <iframe class="video" src="https://www.youtube.com/embed/SllASxjn1rw?si=CC_sE5X8RkKuTOUb&amp;controls=0"
-            title="YouTube video player" aria-details="River_Fitness_Terembemutató"
-             allowfullscreen></iframe>
+            title="YouTube video player" aria-details="River_Fitness_Terembemutató" allowfullscreen></iframe>
         </div>
         <h2>Miről szól ez a világszínvonalú Személyi Edzői Tanfolyam</h2>
         <p>
@@ -46,25 +46,27 @@
 
       <h3>Mi tesz minden más tanfolyamtól különbözővé ezt a képzést?</h3>
       <section class="details-container">
-        <p class="first-p">
-          Bennfentesként fogsz belelátni a legmagasabb szintű személyi edzői
-          üzleti üzleti tevékenység színfalai mögé.
-        </p>
-        <p>
-          Ez az egyetlen lehetőség, hogy betekintést nyerj egy nemzetközileg
-          elismert személyi edzői üzlet hátterébe.
-        </p>
-        <p>
-          Nem elég, hogy látni fogod az összes részletet, de megkapod mindazt a
-          leckét és tapasztalatot, amelyet én és a csapatom kénytelenek voltunk
-          átélni elkötve egy halom pénzt hirdetésekre, szakemberekre, beásva
-          magunkat a szakma lövészárlába.
-        </p>
-        <p>
-          Megtanultuk és átadtuk neked a jót, a rosszat és mindent arról, hogy
-          mi működik a piacon jelenleg, képessé teszünk arra, hogy felépíts egy
-          erős személyi edző üzletet.
-        </p>
+        <article class="p-container">
+          <p class="first-p">
+            Bennfentesként fogsz belelátni a legmagasabb szintű személyi edzői
+            üzleti üzleti tevékenység színfalai mögé.
+          </p>
+          <p>
+            Ez az egyetlen lehetőség, hogy betekintést nyerj egy nemzetközileg
+            elismert személyi edzői üzlet hátterébe.
+          </p>
+          <p>
+            Nem elég, hogy látni fogod az összes részletet, de megkapod mindazt a
+            leckét és tapasztalatot, amelyet én és a csapatom kénytelenek voltunk
+            átélni elkötve egy halom pénzt hirdetésekre, szakemberekre, beásva
+            magunkat a szakma lövészárlába.
+          </p>
+          <p>
+            Megtanultuk és átadtuk neked a jót, a rosszat és mindent arról, hogy
+            mi működik a piacon jelenleg, képessé teszünk arra, hogy felépíts egy
+            erős személyi edző üzletet.
+          </p>
+        </article>
         <figure>
           <img class="training1" src="./images/personal-trainer.jpg"
             alt="Egy nő edz miközben a személyi edzője figyel rá" />
@@ -76,11 +78,13 @@
       <section class="opinions-container">
         <h4>Mit mondanak az emberek a képzésünkről
         </h4>
-        <p class="idezet">Ez a tanfolyam biztosítja a leggyorsabb fejlődést a személyi edzői
-          üzlet felépítéséhez. Figyelj oda az előadásokon és a gyakorlatokon,
-          mert ez mérföldes lépésekkel fogja előmozdítani az üzleted.</p>
-        <p class="name">Győri Nagy Ferenc</p>
-        <p class="titulus">Személyi edző, a Flex Shape Fitness Stúdió tulajdonosa</p>
+        <article class="p-container-2">
+          <p class="idezet">Ez a tanfolyam biztosítja a leggyorsabb fejlődést a személyi edzői
+            üzlet felépítéséhez. Figyelj oda az előadásokon és a gyakorlatokon,
+            mert ez mérföldes lépésekkel fogja előmozdítani az üzleted.</p>
+          <p class="name">Győri Nagy Ferenc</p>
+          <p class="titulus">Személyi edző, a Flex Shape Fitness Stúdió tulajdonosa</p>
+        </article>
         <figure class="training2-main">
           <img class="training2" src="./images/boxing-trainer.jpg" alt="Box edzés" />
         </figure>
@@ -90,23 +94,24 @@
 
       <h3>A legfontosabb információk a Személyi edzői tanfolyamról</h3>
       <section class="info-container">
-        <article class="info-name">
+        <article class="info-name info-name1">
           <img src="./images/location.png" alt="helyszín ikon">
           <p class="info1">Helyszín:</p>
           <address class="info2">Danubius Hotel Helia, Budapest, Kárpát utca 62-64.</address>
         </article>
-        <article class="info-name">
+        <article class="info-name info-name2">
           <img src="./images/calendar.png" alt="dátum ikon">
           <p class="info1">Dátum:</p>
           <div class="info2">2024.05.01. Szerda</div>
         </article>
-        <article class="info-name last">
+        <article class="info-name info-name3">
           <img src="./images/group.png" alt="emberek ikon">
           <p class="info1"> Szabad helyek:</p>
           <p class="info2">103 fő betelt, 17 szabad hely maradt a jelentkezők számára.</p>
         </article>
-        <div class="jelentkezes-a2"><a href="#jelentkezes">Jelentkezés</a></div>
-      </section> class="info-container"
+      </section>
+
+      <div class="jelentkezes-a2"><a href="#jelentkezes">Jelentkezés</a></div>
 
       <h3 class="jelentkezz-h3">Hogy jelentkezz</h3>
       <section class="jelentkezz">
@@ -123,32 +128,36 @@
 
       <!--ŰRLAP-->
 
-      <section class="form-main-container">
-        <div class="form-inner-container">
-          <h6>Személyi Edzői Tanfolyam - Jelentkezés</h6>
-          <form id="jelentkezes" accesskey="#" method="post">
-            <label for="vezeteknev">Vezetéknév </label>
-            <input type="text"  name="vezeteknev" placeholder="Vezetékneved..." id="vezeteknev" />
+      <section class="form-main-main-container">
+        <section class="form-main-container">
+          <div class="form-inner-container">
+            <h6>Személyi Edzői Tanfolyam - Jelentkezés</h6>
+            <form id="jelentkezes" accesskey="#" method="post">
+              <label for="vezeteknev">Vezetéknév </label>
+              <input type="text" name="vezeteknev" placeholder="   Vezetékneved..." id="vezeteknev" />
 
-            <label for="keresztnev">Keresztnév</label>
-            <input type="text" name="keresztnev" placeholder="Keresztneved..." id="keresztnev" />
+              <label for="keresztnev">Keresztnév</label>
+              <input type="text" name="keresztnev" placeholder="   Keresztneved..." id="keresztnev" />
 
-            <label for="email">Email</label>
-            <input type="email" class="input" name="email" placeholder="Email címed" id="email">
+              <label for="email">Email</label>
+              <input type="email" class="input" name="email" placeholder="   Email címed" id="email">
 
-            <label for="telefonszam">Telefonszám</label>
-            <input type="number"  name="telenonszam" placeholder="Telefonszámod..."
-              id="telefonszam" />
+              <label for="telefonszam">Telefonszám</label>
+              <input type="number" name="telenonszam" placeholder="   Telefonszámod..." id="telefonszam" />
 
-            <label for="elokepzettseg">Szakmai előképzettség</label>
-            <input type="text" name="szakmai_elokepzettseg" placeholder="Szakmai előképzettséged..."
-              id="elokepzettseg" />
-            
-            <button class="bekuldes" type="submit" >Jelentkezés beküldése</button>
-          </form>
-        </div>
-      </section>
+              <label for="elokepzettseg">Szakmai előképzettség</label>
+              <input type="text" name="szakmai_elokepzettseg" placeholder="   Szakmai előképzettséged..."
+                id="elokepzettseg" />
+
+              <button class="bekuldes" type="submit">Jelentkezés beküldése</button>
+            </form>
+          </div>
+        </section>
+        <section>
     </main>
+
+    <!--LÁBLÉC-->
+
     <footer class="footer-container">
       <p>Trainings Far Beyond Oktatási Központ Kft.</p>
       <p>2509 Esztergom-kertváros, Wesselényi u. 145.</p>
