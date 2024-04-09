@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "font-basic";
+    /*background-image: url('../images/dumbbell-01.jpg');*/
+}
+
+body {
+    background-color: black;
+}
+.main-div {  
+    padding: 5px;
+    background-image: url(../images/dumbbell-01.jpg);
+
+}
+
+@font-face {
+    font-family: "font-basic";
+    src: url(../fonts/PTC55F.ttf)
+}
+
+
+:root {
+    --gold: rgb(232, 186, 101);
+    --font-color-whitesmoke: rgb(245, 245, 245);
+    /*--background-primary: url ('./images/dumbbell-01.jpg');*/
+    --font-size-h: 1.5rem;
+    --font-size-p: 1rem;
+}
+    
+/*main {
+    display: grid;
+    grid-template-columns: auto;    
+    grid-template-areas:
+    'introduction-container'
+    'details-container'
+    'opinions-container'
+    'info-container'
+    'form-container';
+}*/
+
+
+.header-container {
+    grid-area: header-container;
+}
+
+.introduction-container {
+    grid-area: introduction-container;
+}
+
+.details-container {
+    grid-area: details-container;
+}
+
+.opinions-container {
+    grid-area: opinions-container;
+}
+
+.info-container {
+    grid-area: info-container;
+}
+
+.form-container {
+    grid-area: form-container;
+}
+
+.footer-container {
+    grid-area: footer-container;
+}
+
+/* FEJLÉC */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    padding: 20px;
+
+}
+
+h1 {
+    color: var(--font-color-whitesmoke);
+    font-size: 2rem;
+    font-weight: bold;  
+    text-shadow: 0px 3px 5px black;
+    text-align: center;   
+}
+
+nav p {
+    color: var(--gold);
+    font-size: 1.3rem;
+    text-shadow: var(--text-shadow-primary);
+    font-weight: bold;
+    text-shadow: 0px 3px 5px black;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+/* BEVEZETŐ */
+
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    padding: 20px;
+    
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    position: relative;
+    border: 10px solid black;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    
+}
+
+h2 {
+    color: var(--gold);
+    text-shadow: var(--text-shadow-primary);
+    font-size: var(--font-size-h);
+    text-shadow: 0px 3px 5px black; 
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px;
+    
+} 
+
+
+.introduction-container p {
+    color: var(--font-color-whitesmoke);
+    font-size: var(--font-size-p);
+    text-align: center;   
+    text-shadow: 0px 3px 5px black;
+    padding: 20px 0 20px 0;
+
+}
+
+a {
+    color: var(--font-color-whitesmoke);
+    display: inline-block;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    background-color: var(--gold);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    
+}
+
+
+/*ISMERTETŐ A TANFOLYAMRÓL*/
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    background-size: cover;
+    background-repeat: repeat-y;
+    
+}
+
+h3 {
+    width: 100%;
+    color: var(--font-color-whitesmoke);
+    font-size: var(--font-size-h);
+    background-color: var(--gold);
+    text-shadow: 0px 3px 5px black; 
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px 0 20px 0;
+    margin: 40px 0px 40px 0;
+
+}
+
+.details-container p {
+    color: var(--font-color-whitesmoke);
+    text-shadow: 0px 3px 5px black;
+    padding: 20px 0 20px 0;
+}
+
+.first-p {
+    font-size: var(--font-size-h);
+}
+
+
+.training1 {
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+}
+
+/*VÉLEMÉNY*/
+
+.opinions-container {
+    color: black;
+    background-color: white;
+    font-size: var(--font-size-p);   
+    border-radius: 10px;
+    
+}
+
+h4 {
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    line-height: 3rem;
+    padding: 20px;
+    font-size: var(--font-size-h);
+    border-radius: 10px;
+}
+
+.idezet {
+    font-size: var(--font-size-p);
+    font-weight: 600;
+    line-height: 1.7rem;
+    padding: 20px;
+}
+
+.name {
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.titulus {
+    padding: 10px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.training2-main {
+    padding: 20px;
+}
+
+.training2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    }
+
+
+
+/*FONTOS INFORMÁCIÓK*/
+
+/*h3 már korábban megadtam az értékeket*/
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 20px 20px 20px;
+
+}
+
+.info-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c3c5197;
+    margin: 0 20px 10px 20px;
+    min-height: 200px;
+    border-radius: 10px;
+    padding: 15px 0px 15px 0px;
+}
+
+.info1, .info2{
+    color: var(--font-color-whitesmoke);
+    text-align: center;
+}
+
+.info1 {
+    font-size: var(--font-size-h);
+}
+
+.info2 {
+ text-align: center;
+}
+
+article img {
+padding: 10px;
+height: 8rem;
+width: 8rem;
+}
+
+.info-name.last {
+    margin-bottom: 40px;
+}
+
+.jelentkezes-a2 {
+    display: flex;
+    justify-content: center;
+}
+
+.jelentkezes-a2:hover {
+    background-color: black;
+    color: var(--gold);
+}
+
+.jelentkezz-h3 {
+    width: 100%;
+    color: var(--font-color-whitesmoke);
+    font-size: var(--font-size-h);
+    background-color: var(--gold);
+    text-shadow: 0px 3px 5px black; 
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px 0 20px 0;
+    margin: 40px 0px 0 0;
+}
+
+.jelentkezz {
+    background-color: var(--gold);
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.white-background {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-weight: 600;
+    line-height: 1.4rem;
+    padding: 20px;
+}
+
+.hatarido {
+    color: var(--font-color-whitesmoke);
+    text-shadow: var(--text-shadow-primary);
+    font-size: var(--font-size-p);
+    text-shadow: 0px 3px 5px black; 
+    text-align: center;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.datum {
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.lejarat {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/*ŰRLAP*/
+
+form {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
+
+.form-main-container {
+    background-color:  var(--font-color-whitesmoke);
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.form-inner-container {
+    
+    background-color: lightgrey;
+    padding: 3px;
+}
+
+
+h6 {
+    line-height: 30px;
+    padding: 15px;
+}
+
+
+
+label {
+    display: block;
+    padding: 20px 0 10px 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    line-height:30px;
+    
+
+}
+
+input:focus {
+    border: 2px solid gold;
+}
+
+
+
+.bekuldes {
+    padding: 15px;
+    margin: 40px 0 30px 0;
+    color: var(--font-color-whitesmoke);
+    text-decoration: none;
+    font-weight: 600;
+    background-color: var(--gold);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bekuldes:hover {
+    background-color: black;
+    color: var(--gold);
+}
+
+/* LÁBLÉC */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.488);
+}
+
+footer p {
+    color: var(--font-color-whitesmoke);
+    line-height: 25px;
+}
+
+
+/* PROBLÉMÁK */
+
+/*Videó formázása??
+input mező formázása szöveg beírásánál
+GITHub
+media@
+
