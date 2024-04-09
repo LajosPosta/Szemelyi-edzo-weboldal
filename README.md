@@ -11,6 +11,6 @@ A mintákat - ami alapján dolgoztam - is feltöltöttem a GitHubra.
 ui.: Nem tudom, hogy miért van egy main és egy master ágam a GitHubon?! A gépem mastert készített kezdettől fogva.
 
 Szeretném kérni kiértékeléseteket és javaslatotokat!
-Előre is köszönöm!
+Előre is köszönöm segítségetek!
 Szép napot!
 Lajos
